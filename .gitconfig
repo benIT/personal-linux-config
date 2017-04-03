@@ -1,0 +1,23 @@
+[user]
+	name = ben
+	email = benoit.works@gmail.com
+[color]
+        ui = auto
+[mergetool]
+        keepBackup = false
+[core]
+        editor = vim
+        autocrlf = input
+[push]
+        default = upstream
+[alias]
+        co = checkout
+        br = branch
+        ci = commit
+        st = status
+        last = log -1 HEAD
+        oneline = log --pretty=oneline --abbrev-commit --graph --decorate
+        graph=  log --all --graph --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue) %an%Creset' --abbrev-commit
+        amend = commit --amend
+        changes = diff --name-status
+        undo = reset --soft HEAD^
