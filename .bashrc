@@ -1,8 +1,12 @@
 ##########################
 #BASH ALIAS
 ##########################
-alias ll='ls -alh'
-alias ltr='ls -ltrh'
+alias ll='ls -ahl --color=auto'
+alias ltr='ls -ahltr --color=auto'
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias c='clear'
 
 ##########################
 #GIT function that modify PS1 with branch info
