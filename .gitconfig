@@ -21,3 +21,4 @@
         amend = commit --amend
         changes = diff --name-status
         undo = reset --soft HEAD^
+        lo =  log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short
