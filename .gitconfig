@@ -14,7 +14,7 @@
         co = checkout
         br = branch
         ci = commit
-        st = status
+        st = status -s
         last = log -1 HEAD
         oneline = log --pretty=oneline --abbrev-commit --graph --decorate
         graph=  log --all --graph --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue) %an%Creset' --abbrev-commit
