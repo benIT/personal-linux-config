@@ -3,6 +3,8 @@
 	email = benoit.works@gmail.com
 [color]
         ui = auto
+[merge]
+        ff = false
 [mergetool]
         keepBackup = false
 [core]
