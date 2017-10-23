@@ -12,14 +12,14 @@ Thanks to git, it can be cloned on each (virtual) machine to deploy and machine 
 Run that command to clone and install:
     
     cd ~ 
-    git clone git@github.com:benIT/personal-linux-config.git
+    git clone --recursive git@github.com:benIT/personal-linux-config.git
     cd personal-linux-config
     ./install.sh
 
 
 Or use this bash one-liner:
      
-    cd ~ && git clone git@github.com:benIT/personal-linux-config.git && cd personal-linux-config && ./install.sh
+    cd ~ && git clone --recursive git@github.com:benIT/personal-linux-config.git && cd personal-linux-config && ./install.sh
     
 ### Update 
 
@@ -32,3 +32,21 @@ Run that command to update sources:
 Or use this bash one-liner:
 
     cd ~/personal-linux-config && git pull origin master
+
+## Git
+
+### Resolving conflict
+
+Run first:
+
+	git mergetool
+
+
+This config is set with vimdiff as diff tool. Here are some handy shortcut with this tool: 
+
+	:diffg RE  " get from REMOTE
+	:diffg BA  " get from BASE
+	:diffg LO  " get from LOCAL
+
+
+Use `:wqa` to quit all files when done.

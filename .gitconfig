@@ -5,8 +5,11 @@
         ui = auto
 [merge]
         ff = false
+	tool = vimdiff
+	conflictstyle = diff3
 [mergetool]
         keepBackup = false
+	prompt = false
 [core]
         editor = vim
         autocrlf = input
