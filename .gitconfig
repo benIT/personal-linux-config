@@ -14,7 +14,7 @@
         default = upstream
 [alias]
         co = checkout
-        br = branch
+        br = branch -a
         ci = commit
         st = status -s
         last = log -1 HEAD
