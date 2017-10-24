@@ -8,7 +8,7 @@ alias ...='cd ../../'
 alias ....='cd ../../../'
 alias c='cat'
 alias m='more'
-alias vi='vim'
+alias v='vim'
 
 ##########################
 # PS1 
@@ -27,4 +27,4 @@ color_my_prompt
 ##########################
 GIT_PROMPT_ONLY_IN_REPO=1
 GIT_PROMPT_THEME=Solarized
-source bash-git-prompt/gitprompt.sh
+source $HOME/personal-linux-config/bash-git-prompt/gitprompt.sh
