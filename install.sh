@@ -42,3 +42,15 @@ else
     echo -e $GIT_SOURCE_LINE >> ~/.gitconfig
     echo -e "\tThe line '$GIT_SOURCE_LINE' has been added to .gitconfig file"
 fi
+
+##############################################################
+#Installing vim nginx conf
+##############################################################
+NGINX_FILETYPE_LINE="setfiletype nginx"
+if grep -q "$NGINX_FILETYPE_LINE" ~/.vim/filetype.vim
+then
+    echo -e "\tSKIPPING: ~/.vim/filetype.vim contains '$NGINX_FILETYPE_LINE'"
+else
+    echo -e "au BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/*,/etc/nginx/sites-available/* if &ft == '' | setfiletype nginx | endif" >> ~/.vim/filetype.vim
+    echo -e "\tThe line '$NGINX_FILE_TYPE' has been added to filetype.vim file"
+fi
