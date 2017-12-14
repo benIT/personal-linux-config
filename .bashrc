@@ -9,6 +9,7 @@ alias ....='cd ../../../'
 alias c='cat'
 alias m='more'
 alias v='vim'
+alias rvim='sudo -E vim'
 
 ##########################
 # PS1 
