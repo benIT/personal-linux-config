@@ -51,6 +51,11 @@ dw: delete word
 :! command %: execute command on the current file
 :r textfile: insert text from a specified file into the current buffer
 
+### configuration
+
+:set nu: turn on line display
+:set nonu: turn off line display
+
 ## linux
 
 ### Create a symlink
