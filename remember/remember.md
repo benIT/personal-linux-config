@@ -58,7 +58,51 @@ dw: delete word
 
 ## linux
 
+### .tgz archive
+
+#### Create a .tgz archive
+
+    tar -cvzf archive.tgz archive
+
+#### Extract a .tgz archive
+
+    tar -xvzf archive.tgz
+
+
+#### List a .tgz archive
+
+    tar -tf archive.tgz
+
+### zip archive
+
+#### create a zip archive
+
+    zip -r archive.zip target
+
+#### extract a zip archive 
+
+    unzip archive.zip -d target
+
+#### list a zip archive
+
+    unzip -l archive.zip
+
 ### Create a symlink
 
      ln -s /path/to/file /path/to/symlink
+
+## GIT
+
+### Create a tag
+
+    git tag -a v1.0.0 -m "version 1.0.0: php7.0 + yarn + .env"
+
+### Push tag
+
+    git push --tags
+
+### Delete tag
+
+    git tag --delete tagname
+    git push origin :tagname
 
