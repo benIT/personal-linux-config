@@ -29,3 +29,10 @@ color_my_prompt
 GIT_PROMPT_ONLY_IN_REPO=1
 GIT_PROMPT_THEME=Solarized
 source $HOME/personal-linux-config/bash-git-prompt/gitprompt.sh
+##########################
+# vagrant
+##########################
+alias vssh='vagrant ssh'
+alias vup='vagrant up'
+alias vups='vagrant up && vagrant ssh'
+alias vsshc='vagrant ssh-config'
