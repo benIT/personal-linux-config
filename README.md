@@ -33,6 +33,25 @@ Or use this bash one-liner:
 
     cd ~/personal-linux-config && git pull origin master
 
+## VIM
+
+### Plugin management
+
+[Vundle.vim](https://github.com/VundleVim/Vundle.vim) has been chosen to manage VIM plugins
+
+The installer will create a symlink to link `~/.vim/` and `personal-linux-config/.vim` folders.
+
+The installer will add a line in `~/.vimrc` to source the content of `personal-linux-config/.vim/.vimrc`.
+
+### Adding a new VIM plugin
+
+Add a line in `personal-linux-config/.vim/.vimrc` to make Vundle.vim track this plugin.
+
+
+### NERDtree
+
+User `Ctrl+ww` to switch between the tree window and the file window.
+
 ## Git
 
 ### Resolving conflict

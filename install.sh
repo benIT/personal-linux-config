@@ -20,7 +20,7 @@ fi
 ##############################################################
 #Installing personal .vimrc
 ##############################################################
-VIM_RC_SOURCE_LINE="source ~/personal-linux-config/.vimrc"
+VIM_RC_SOURCE_LINE="source ~/personal-linux-config/.vim/.vimrc"
 touch ~/.vimrc
 if grep -q "personal-linux-config" ~/.vimrc
 then
@@ -44,20 +44,11 @@ else
 fi
 
 ##############################################################
-#Installing vim nginx conf
+#linking ~/.vim and ~/personal-linux-configuration/.vim
 ##############################################################
-NGINX_FILETYPE_LINE="setfiletype nginx"
+if [ -d '~/.vim' ]; then
+    rm -rf ~/.vim
+fi
+ln -s ~/personal-linux-config/.vim ~/.vim
 
-if [ ! -d '~/.vim' ]; then
-    mkdir -p ~/.vim
-fi
-if [ ! -f ~/.vim/filetype.vim ]; then
-    touch ~/.vim/filetype.vim
-fi
-if grep -q "$NGINX_FILETYPE_LINE" ~/.vim/filetype.vim
-then
-    echo -e "\tSKIPPING: ~/.vim/filetype.vim contains '$NGINX_FILETYPE_LINE'"
-else
-    echo -e "au BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/*,/etc/nginx/sites-available/* if &ft == '' | setfiletype nginx | endif" >> ~/.vim/filetype.vim
-    echo -e "\tThe line '$NGINX_FILE_TYPE_LINE' has been added to filetype.vim file"
-fi
+echo -e "For installing, VIM plugins do not forget to run ':PluginInstall'"
