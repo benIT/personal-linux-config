@@ -28,7 +28,7 @@ color_my_prompt
 ##########################
 GIT_PROMPT_ONLY_IN_REPO=1
 GIT_PROMPT_THEME=Solarized
-source $HOME/personal-linux-config/bash-git-prompt/gitprompt.sh
+source $HOME/personal-linux-config/bash/bash-git-prompt/gitprompt.sh
 ##########################
 # vagrant
 ##########################
