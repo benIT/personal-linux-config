@@ -4,26 +4,26 @@
 [color]
         ui = auto
 [merge]
-        ff = false
-	tool = vimdiff
+    ff = false
+    tool = vimdiff
 	conflictstyle = diff3
 [mergetool]
-        keepBackup = false
+    keepBackup = false
 	prompt = false
 [core]
-        editor = vim
-        autocrlf = input
+    editor = vim
+    autocrlf = input
 [push]
-        default = upstream
+    default = upstream
 [alias]
-        co = checkout
-        br = branch -a
-        ci = commit
-        st = status -s
-        last = log -1 HEAD
-        oneline = log --pretty=oneline --abbrev-commit --graph --decorate
-        graph=  log --all --graph --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue) %an%Creset' --abbrev-commit
-        amend = commit --amend
-        changes = diff --name-status
-        undo = reset --soft HEAD^
-        lo =  log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short
+    co = checkout
+    br = branch -a
+    ci = commit
+    st = status -s
+    last = log -1 HEAD
+    oneline = log --pretty=oneline --abbrev-commit --graph --decorate
+    graph=  log --all --graph --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue) %an%Creset' --abbrev-commit
+    amend = commit --amend
+    changes = diff --name-status
+    undo = reset --soft HEAD^
+    lo =  log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short

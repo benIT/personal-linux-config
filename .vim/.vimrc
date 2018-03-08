@@ -33,12 +33,19 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'chr4/nginx.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'tpope/vim-commentary'
+Plugin 'sickill/vim-monokai'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Plugin configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
+syntax enable
+colorscheme monokai
+" let g:molokai_original = 1
 let g:vim_markdown_folding_disabled = 1
+"display nerdtree when vim is launched
 autocmd vimenter * NERDTree
+let NERDTreeShowHidden=1

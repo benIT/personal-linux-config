@@ -46,9 +46,7 @@ fi
 ##############################################################
 #linking ~/.vim and ~/personal-linux-configuration/.vim
 ##############################################################
-if [ -d '~/.vim' ]; then
-    rm -rf ~/.vim
-fi
+rm -rf ~/.vim
 ln -s ~/personal-linux-config/.vim ~/.vim
-
+ln -s ~/personal-linux-config/.vim/bundle/vim-monokai/colors/monokai.vim ~/personal-linux-config/.vim/colors/monokai.vim
 echo -e "For installing, VIM plugins do not forget to run ':PluginInstall'"
