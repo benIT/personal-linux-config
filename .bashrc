@@ -36,3 +36,18 @@ alias vssh='vagrant ssh'
 alias vup='vagrant up'
 alias vups='vagrant up && vagrant ssh'
 alias vsshc='vagrant ssh-config'
+alias vr='vagrant reload'
+
+##########################
+#remember
+#This util will search in the remember.md file that contains some usefull notes
+##########################
+function remember {
+    if [ $# -ne 1 ]
+    then
+        echo -e "It seems that the 'remember' function has not been called properly.\nUSAGE:\n$ remember something"
+        return 1
+    fi
+    grep $1 ~/personal-linux-config/remember/remember.md
+}
+
