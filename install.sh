@@ -6,7 +6,7 @@ echo -e "Let's install common utilities that simplify your life:"
 ##############################################################
 #Installing personal .bashrc
 ##############################################################
-BASH_RC_SOURCE_LINE="source ~/personal-linux-config/.bashrc"
+BASH_RC_SOURCE_LINE="source ~/personal-linux-config/bash/.bashrc"
 touch ~/.bashrc
 if grep -q "personal-linux-config" ~/.bashrc
 then
