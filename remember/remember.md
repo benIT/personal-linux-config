@@ -58,6 +58,16 @@ dw: delete word
 
 ## linux
 
+### groups
+
+#### list groups of current user
+
+    groups
+
+#### add existing user to existing group
+
+    sudo usermod -a -G groupName userName
+
 ### .tgz archive
 
 #### Create a .tgz archive
