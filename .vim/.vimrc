@@ -47,5 +47,5 @@ colorscheme monokai
 " let g:molokai_original = 1
 let g:vim_markdown_folding_disabled = 1
 "display nerdtree when vim is launched
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 let NERDTreeShowHidden=1
