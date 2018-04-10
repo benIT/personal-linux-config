@@ -9,27 +9,23 @@ Thanks to git, it can be cloned on each (virtual) machine to deploy and machine 
 
 ### Installation 
 
-Run that command to clone and install:
-    
-    cd ~ 
-    git clone --recursive git@github.com:benIT/personal-linux-config.git
-    cd personal-linux-config
-    ./install.sh
+#### Using GIT
 
-
-Or use this bash one-liner:
+use this bash one-liner:
      
     cd ~ && git clone --recursive git@github.com:benIT/personal-linux-config.git && cd personal-linux-config && ./install.sh
-    
+
+#### Or downloading a release
+
+    wget -qO- https://github.com/benIT/personal-linux-config/releases/download/v0.0.1/personal-linux-config.tgz | tar -xzv && cd ~/personal-linux-config && ./install.sh
+
+#### Finalizing install
+
+in Vim, run `:PluginInstall`
+
 ### Update 
 
 Run that command to update sources:
-
-    cd ~/personal-linux-config 
-    git pull origin master
-
-
-Or use this bash one-liner:
 
     cd ~/personal-linux-config && git pull origin master
 
