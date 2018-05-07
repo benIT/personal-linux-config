@@ -116,3 +116,10 @@ dw: delete word
     git tag --delete tagname
     git push origin :tagname
 
+### Openstack
+
+    openstack list
+    openstack stack show my-stack
+    openstack stack delete my-stack
+    openstack stack volume list
+
