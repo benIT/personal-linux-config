@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #USAGE: ~/personal-linux-config/bash/resize-image.sh -h
-
+#imagemagick package must be installed: sudo apt install imagemagick
 DEFAULT_SIZE_PERCENTAGE=20
 SIZE_PERCENTAGE=$DEFAULT_SIZE_PERCENTAGE
 declare -a EXTENSION_TO_PROCESS=("jpg" "JPG" "png" "PNG");
