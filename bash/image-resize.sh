@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#USAGE: ~/personal-linux-config/bash/resize-image.sh -h
+#USAGE: ~/personal-linux-config/bash/image-resize.sh -h
 #imagemagick package must be installed: sudo apt install imagemagick
 DEFAULT_SIZE_PERCENTAGE=20
 SIZE_PERCENTAGE=$DEFAULT_SIZE_PERCENTAGE
@@ -10,7 +10,7 @@ usage() {
 cat << EndOfMessage
 #cd Pictures
 #use DEFAULT_SIZE_PERCENTAGE:
-#~/personal-linux-config/bash/resize-image.sh
+#~/personal-linux-config/bash/image-resize.sh
 #OR specify resize percent using -p option:
 #~/personal-linux-config/bash/resize-image.sh -p 10
 EndOfMessage

@@ -10,7 +10,7 @@ alias c='cat'
 alias m='more'
 alias v='vim'
 alias rvim='sudo -E vim'
-
+alias image-resize=' ~/personal-linux-config/bash/image-resize.sh'
 ##########################
 # PS1 
 ##########################
