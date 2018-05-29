@@ -123,3 +123,24 @@ dw: delete word
     openstack stack delete my-stack
     openstack stack volume list
 
+## OS
+
+### OS name
+    lsb_release -a
+
+### List partitions
+
+
+## Database
+
+### PostgreSQL
+
+#### Enter interactive mode 
+
+    sudo -u postgres psql
+    
+#### Create a new user and database
+
+    sudo -u postgres psql -c "CREATE USER moodle WITH PASSWORD 'moodle' CREATEDB;"
+    sudo -u postgres psql -c "CREATE DATABASE moodle;"
+    sudo -u postgres psql -c "grant all privileges on database moodle to moodle;"
