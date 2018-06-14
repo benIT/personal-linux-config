@@ -11,6 +11,7 @@ alias m='more'
 alias v='vim'
 alias rvim='sudo -E vim'
 alias image-resize=' ~/personal-linux-config/bash/image-resize.sh'
+alias cartoon.sh='~/personal-linux-config/bash/cartoon.sh'
 ##########################
 # PS1 
 ##########################
