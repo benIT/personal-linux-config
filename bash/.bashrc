@@ -12,6 +12,7 @@ alias v='vim'
 alias rvim='sudo -E vim'
 alias image-resize=' ~/personal-linux-config/bash/image-resize.sh'
 alias cartoon.sh='~/personal-linux-config/bash/cartoon.sh'
+alias github-authoring='git config user.name "benIT" && git config user.email "benoit.works@gmail.com"'
 ##########################
 # PS1 
 ##########################
