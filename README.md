@@ -15,6 +15,13 @@ use this bash one-liner:
      
     cd ~ && git clone --recursive git@github.com:benIT/personal-linux-config.git && cd personal-linux-config && ./install.sh
 
+or:
+
+    git clone https://github.com/benIT/personal-linux-config.git
+    cd personal-linux-config
+    git submodule init
+    git submodule update 
+
 #### Or downloading a release
 
     wget -qO- https://github.com/benIT/personal-linux-config/releases/download/v0.0.1/personal-linux-config.tgz | tar -xzv && cd ~/personal-linux-config && ./install.sh
