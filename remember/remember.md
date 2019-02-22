@@ -43,6 +43,8 @@ dw: delete word
 :bn: next buffer
 :bp: previous buffer
 :bd: delete buffer
+:ls: list current buffers
+:bn: display the nth buffer
 
 ### running command 
 

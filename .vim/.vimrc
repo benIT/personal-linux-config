@@ -13,6 +13,7 @@ set softtabstop=4   " Sets the number of columns for a TAB
 
 set expandtab       " Expand TABs to spaces
 
+set autochdir       " auto change to current dir
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Vundle: bundle manager for VIM
 "run :PluginInstall to install bundles 

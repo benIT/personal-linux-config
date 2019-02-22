@@ -13,6 +13,7 @@ alias rvim='sudo -E vim'
 alias image-resize=' ~/personal-linux-config/bash/image-resize.sh'
 alias cartoon.sh='~/personal-linux-config/bash/cartoon.sh'
 alias github-authoring='git config user.name "benIT" && git config user.email "benoit.works@gmail.com"'
+alias openstack-wait='while(true); do clear; openstack stack list; sleep 5; done'
 ##########################
 # PS1 
 ##########################
