@@ -107,7 +107,7 @@ dw: delete word
 
 ### Create a tag
 
-    git tag -a v1.0.0 -m "version 1.0.0: php7.0 + yarn + .env"
+    git tag -a v1.0.0 -m "version 1.0.0"
 
 ### Push tag
 
@@ -128,10 +128,12 @@ dw: delete word
 ## OS
 
 ### OS name
+
     lsb_release -a
 
 ### List partitions
 
+    df -h
 
 ## Database
 
@@ -146,3 +148,25 @@ dw: delete word
     sudo -u postgres psql -c "CREATE USER moodle WITH PASSWORD 'moodle' CREATEDB;"
     sudo -u postgres psql -c "CREATE DATABASE moodle;"
     sudo -u postgres psql -c "grant all privileges on database moodle to moodle;"
+    
+## Docker
+
+### Build
+
+	docker build -t benit/debian-web . --build-arg http_proxy --build-arg https_proxy --build-arg GIT_CONFIG_FILE="$(cat ~/.gitconfig)"  --tag benit/debian-web:php5.6
+
+### Run
+
+	docker run --name debian-web --rm -p 8080:80 -d benit/debian-web:latest
+	
+### Attach a shell
+
+    docker container exec -it debian-web /bin/bash
+    
+### Stop a container
+
+    docker container stop debian-web
+
+### Stop all running containers
+
+    docker stop `docker ps -a -q`
