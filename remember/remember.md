@@ -151,13 +151,17 @@ dw: delete word
     
 ## Docker
 
-### Build
+### List
 
-	docker build -t benit/debian-web . --build-arg http_proxy --build-arg https_proxy --build-arg GIT_CONFIG_FILE="$(cat ~/.gitconfig)"  --tag benit/debian-web:php5.6
+	docker ps -a
 
 ### Run
 
 	docker run --name debian-web --rm -p 8080:80 -d benit/debian-web:latest
+
+### Build
+
+	docker build -t benit/debian-web . --build-arg http_proxy --build-arg https_proxy --build-arg GIT_CONFIG_FILE="$(cat ~/.gitconfig)"  --tag benit/debian-web:php5.6
 	
 ### Attach a shell
 
@@ -167,6 +171,6 @@ dw: delete word
 
     docker container stop debian-web
 
-### Stop all running containers
+### Stop and remove all running containers
 
-    docker stop `docker ps -a -q`
+    docker stop `docker ps -a -q` && docker rm `docker ps -a -q`
