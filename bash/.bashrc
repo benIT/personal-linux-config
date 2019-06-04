@@ -37,12 +37,16 @@ source $HOME/personal-linux-config/bash/bash-git-prompt/gitprompt.sh
 ##########################
 # vagrant
 ##########################
+
 alias vssh='vagrant ssh'
 alias vup='vagrant up'
 alias vups='vagrant up && vagrant ssh'
 alias vsshc='vagrant ssh-config'
 alias vr='vagrant reload'
-
+##########################
+# docker
+##########################
+alias docker-clean='docker stop `docker ps -a -q` && docker rm `docker ps -a -q`'
 ##########################
 #remember
 #This util will search in the remember.md file that contains some usefull notes

@@ -105,6 +105,10 @@ dw: delete word
 
 ## GIT
 
+### rebase
+
+    git fetch &&  git checkout master && git rebase origin/master
+
 ### Create a tag
 
     git tag -a v1.0.0 -m "version 1.0.0"
