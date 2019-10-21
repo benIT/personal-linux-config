@@ -50,3 +50,6 @@ let g:vim_markdown_folding_disabled = 1
 "display nerdtree when vim is launched
 "autocmd vimenter * NERDTree
 let NERDTreeShowHidden=1
+
+"indentationsettings. To use it in vim, normal mode:  gg=G
+filetype  indent plugin on
