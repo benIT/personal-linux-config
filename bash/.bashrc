@@ -12,10 +12,12 @@ alias v='vim'
 alias rvim='sudo -E vim'
 alias image-resize=' ~/personal-linux-config/bash/image-resize.sh'
 alias rename-camcorder-video=' ~/personal-linux-config/bash/rename-camcorder-video.sh'
+alias reencode-camcorder-video=' ~/personal-linux-config/bash/reencode-camcorder-video.sh'
 alias cartoon.sh='~/personal-linux-config/bash/cartoon.sh'
 alias github-authoring='git config user.name "benIT" && git config user.email "benoit.works@gmail.com"'
 alias openstack-wait='while(true); do clear; openstack stack list; sleep 5; done'
 alias sss='shutdown 0'
+alias download='wget --tries=100 --retry-connrefused'
 alias new-script='cp ~/personal-linux-config/bash/template.sh ./new-script.sh && chmod +x ./new-script.sh'
 ##########################
 # PS1 
