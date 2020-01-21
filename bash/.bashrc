@@ -19,6 +19,7 @@ alias openstack-wait='while(true); do clear; openstack stack list; sleep 5; done
 alias sss='shutdown 0'
 alias download='wget --tries=100 --retry-connrefused'
 alias new-script='cp ~/personal-linux-config/bash/template.sh ./new-script.sh && chmod +x ./new-script.sh'
+alias random='openssl rand -base64 32'
 ##########################
 # PS1 
 ##########################
