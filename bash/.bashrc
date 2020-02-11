@@ -20,6 +20,7 @@ alias sss='shutdown 0'
 alias download='wget --tries=100 --retry-connrefused'
 alias new-script='cp ~/personal-linux-config/bash/template.sh ./new-script.sh && chmod +x ./new-script.sh'
 alias random='openssl rand -base64 32'
+alias gitignore-init='echo '.idea' > .gitignore'
 ##########################
 # PS1 
 ##########################

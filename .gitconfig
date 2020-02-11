@@ -3,6 +3,7 @@
 [merge]
     ff = false
     tool = vimdiff
+    tool = meld 
 	conflictstyle = diff3
 [mergetool]
     keepBackup = false
