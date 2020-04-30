@@ -178,3 +178,19 @@ dw: delete word
 ### Stop and remove all running containers
 
     docker stop `docker ps -a -q` && docker rm `docker ps -a -q`
+
+## SSH
+
+### Generate ssh keys
+
+    ssh-keygen -t rsa -b 4096 -C "benoit@laptop"
+
+### Upload ssh key to user
+
+    ssh-copy-id -i ~/.ssh/id_rsa.pub user@ip
+
+## Network
+
+### Get public @IP
+
+    curl ifconfig.me
