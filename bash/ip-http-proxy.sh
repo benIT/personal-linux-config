@@ -2,6 +2,7 @@
 
 #usage:
 # wget https://github.com/benIT/personal-linux-config/blob/master/bash/ip-http-proxy.sh
+# chmod +x ip-http-proxy.sh
 # touch /var/log/ip-http-proxy.log
 # ./ip-http-proxy.sh >> /var/log/ip-http-proxy.log
 # */5 * * * * ./ip-http-proxy.sh >> /var/log/ip-http-proxy.log
