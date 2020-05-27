@@ -4,10 +4,34 @@ This file contains usual linux operations that I am bored of searching on the ne
 
 ## vim
 
+### set vim as default editor
+
+append these 2 lines in `/etc/profile`:
+
+    EDITOR="vim"
+    export EDITOR
+
 ### movement
 
 ^: begining of line
 $: end of line
+
+
+### normal mode
+
+esc: go to normal mode
+u: undo
+ctrl+r: redo: 
+dd: cut:delete line
+x: delete char
+dw: delete word
+diw: delete word under cursor
+~: switch case
+yy: copy line
+p: put after cursor
+P: put before cursor
+dd: delete line
+dw: delete word
 
 ### insert mode
 
@@ -20,17 +44,10 @@ O: append blank line above current line
 ### visual mode
 
 for marking text.
-v: start visaul mode
+v: start visual mode
+shift+v: visual mode for line
 y: yank (copy) mark text
 d: delete marked text
-
-### cut and paste
-
-yy: copy line
-p: put after cursor
-P: put before cursor
-dd: delete line
-dw: delete word
 
 ### search/replace
 
@@ -129,11 +146,19 @@ dw: delete word
     openstack stack delete my-stack
     openstack stack volume list
 
-## OS
+## System
+
+### who is logged in
+
+    w
 
 ### OS name
 
     lsb_release -a
+
+### memory information
+
+    free
 
 ### List partitions
 
