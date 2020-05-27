@@ -63,6 +63,6 @@ function remember {
         echo -e "It seems that the 'remember' function has not been called properly.\nUSAGE:\n$ remember something"
         return 1
     fi
-    grep $1 ~/personal-linux-config/remember/remember.md
+    grep -A 5 $1 ~/personal-linux-config/remember/remember.md
 }
 
