@@ -219,3 +219,14 @@ d: delete marked text
 ### Get public @IP
 
     curl ifconfig.me
+
+## PDF
+
+### Reduce pdf size
+
+ps2pdf -dPDFSETTINGS=/screen in.pdf out.pdf 
+ps2pdf -dPDFSETTINGS=/ebook in.pdf out.pdf 
+
+### Merge several pdfs into one pdf
+
+pdfunite *.pdf merged.pdf
