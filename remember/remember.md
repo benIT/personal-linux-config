@@ -122,6 +122,21 @@ d: delete marked text
 
 ## GIT
 
+### Branch
+
+#### create a new branch
+
+    git co -b feature
+
+#### set upstream and push 
+
+    git push -u origin feature
+
+### delete branch
+
+    git branch -D user-story-32
+    git push origin :user-story-32
+
 ### rebase
 
     git fetch &&  git checkout master && git rebase origin/master
