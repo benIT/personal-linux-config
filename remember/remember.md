@@ -245,3 +245,9 @@ ps2pdf -dPDFSETTINGS=/ebook in.pdf out.pdf
 ### Merge several pdfs into one pdf
 
 pdfunite *.pdf merged.pdf
+
+## rsync 
+
+### miror
+
+rsync -avzh --delete --progress --prune-empty-dirs /home/user/folder foo@bar:/miror
