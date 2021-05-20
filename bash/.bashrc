@@ -24,6 +24,7 @@ alias gitignore-init='echo '.idea' > .gitignore'
 alias gitg='nohup gitg > /dev/null 2>&1&'
 alias grosses-tetes-last-podcast='curl -s https://www.rtl.fr/podcast/les-grosses-tetes.xml | grep -m 1 -o https://.*mp3 | xargs wget --tries=100 --retry-connrefused'
 alias sync-roms='rsync -avzh --delete --progress --prune-empty-dirs /usr/local/share/games/mame/roms/ tv:/usr/local/share/games/mame/roms/'
+alias sync-cam='rsync -avzh --delete --progress --prune-empty-dirs ~/camescope/ user@tv.local:~/camescope/'
 ##########################
 # PS1 
 ##########################
