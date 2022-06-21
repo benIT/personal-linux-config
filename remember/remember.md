@@ -175,6 +175,9 @@ for marking text.
 ### who is logged in
 
     w
+### kill user's process
+
+    sudo pkill -KILL -u ben
 
 ### OS name
 
@@ -244,7 +247,7 @@ for marking text.
 
     curl ifconfig.me
 
-## PDF
+## PDF
 
 ### Reduce pdf size
 
