@@ -276,9 +276,8 @@ for marking text.
 * ctrl+b,p: previous window
 * ctrl+b,n: next window
 * ctrl+b,[0-9]: go to [0-9 window]
-* ctrl+b,": vertical split
-* %: horizontal split
-
+* ctrl+b,": horizontal split
+* ctrl+b,%: vertical split
 
 
 ## psql
